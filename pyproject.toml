@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "cloud-cost-review"
+version = "1.0.0"
+requires-python = ">=3.11"
+description = "Provider-neutral offline cloud billing spike reviewer"
+[project.scripts]
+cost-review = "cost_review.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
